@@ -1,0 +1,68 @@
+/*
+
+    font-family: 'Song Myung', serif;
+
+    font-family: 'Nosifer', cursive;
+
+    font-family: 'Roboto Condensed', sans-serif;
+
+    font-family: 'Nanum Gothic', sans-serif;
+*/
+
+
+
+body{
+    margin: 40px;
+    font-family: 'Nanum Gothic', sans-serif;
+    word-spacing: 4px;
+}
+
+h1 {
+    font-family: 'Nosifer', cursive;
+}
+
+.index{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.first {
+    background-color: darkgreen;
+    color: darkgray;
+    padding: 40px;
+    margin: auto;
+    
+    
+
+}
+
+.second {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 40px;
+    margin: auto;
+
+}
+
+.third {
+    background-color: cadetblue;
+    color: black;
+    padding: 40px;
+    margin: auto;
+
+}
+
+img{
+    width: 250px;
+    float: left;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+h3{
+   font-family: 'Song Myung', serif; 
+}
