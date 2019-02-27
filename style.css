@@ -1,38 +1,101 @@
 /*
-
-    font-family: 'Song Myung', serif;
-
-    font-family: 'Nosifer', cursive;
-
-    font-family: 'Roboto Condensed', sans-serif;
-
-    font-family: 'Nanum Gothic', sans-serif;
+ 헤더에 삽입 
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nosifer|Roboto+Condensed|Song+Myung"rel="stylesheet" >
 */
 
+font-family: 'Song Myung',
+serif;
 
+font-family: 'Nosifer',
+cursive;
 
-body{
+font-family: 'Roboto Condensed',
+sans-serif;
+
+font-family: 'Nanum Gothic',
+sans-serif;
+
+-- > body {
     margin: 40px;
     font-family: 'Nanum Gothic', sans-serif;
-    word-spacing: 4px;
+    word-spacing: 3px;
+}
+
+.main{
+    display: block;
+    height: 100px;
+    clear:both;
 }
 
 h1 {
+    text-align: left;
+    font-size: 50px;
     font-family: 'Nosifer', cursive;
+    display: inline-block;
+    margin: 0px 10px 0px 50px;
+    float: left;
 }
 
-.index{
+.index {
     font-family: 'Roboto Condensed', sans-serif;
+    text-align: right;
+    display: inline-block; /*메뉴 가운데 정렬 / 이 때 text-align 속성은 반드시 상위 요소에 지정해야한다 / 본 예제에서는 body에 지정함 */
+    overflow: hidden; /* float clear , float 해제 / float를 사용했을 때 부모의 높이가 없어지는 문제점을 보완해주는 방법 중 한 가지! */
+    border-bottom: 3px solid #318294;
+}
+
+/*
+.index {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: right;
+    width: 500px;
+    margin: 0 auto;
+    display: inline-block
+    clear:both;
+}
+
+
+ul {
+    width: 400px;
+    text-align: right;
+    list-style: none;
+    position: absolute;
+    right: 10px;
+}
+*/
+
+.index a{
+    display: block; /*사용자 입장에서 링크 버튼을 사용하기 편하도록 링크 영역을 확장시켜줌*/
+    height: 50px;
+    line-height: 50px;/*텍스트 요소의 높이와 동일한 값을 지정하면 텍스트를 세로 가운데 정렬을 할 수 있다 / 단, 이 방법은 텍스트가 한 줄일때만 가능하다*/
+    background-color: #3ea3ba;
+    color: #ddd;
+    padding: 0 35px;/*각 메뉴 버튼의 크기를 지정하지 않고 내부 여백을 이용하면 유지보수 작업에 용이하다*/
+    border-right: 1px solid #358da1;
+}
+
+li{
+    float: left;
+    /* padding: inherit; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid blue;
+    margin: 1em 0;
+    padding: 0; 
 }
 
 .first {
     background-color: darkgreen;
     color: darkgray;
     padding: 40px;
-    margin: auto;
-    
-    
-
+    margin-top: 0px;
 }
 
 .second {
@@ -48,21 +111,32 @@ h1 {
     color: black;
     padding: 40px;
     margin: auto;
-
 }
 
-img{
+.div_img{
+    margin: 0 0 0 -20px;
+}
+
+img {
     width: 250px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkgreen;
+    
     float: left;
-    
-    
 }
 
-a{
+a {
     text-decoration: none;
-    
 }
 
-h3{
-   font-family: 'Song Myung', serif; 
+a:hover {
+    
+    text-decoration-color: blue;
+    text-decoration-line: underline;
+}
+
+h3 {
+    font-family: 'Song Myung', serif;
+    margin: 0 0 30px;
 }
